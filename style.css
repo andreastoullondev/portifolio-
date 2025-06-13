@@ -17,7 +17,12 @@ display: flex;
     width: 33.3%;
     height: 100%;
     border : black 1px solid;
-  
-    
-    
+}
+
+div > i {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0;
 }
