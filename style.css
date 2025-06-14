@@ -1,28 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.container{
-
-
-width: 100%;
-height: 500px;
-display: flex;
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
 }
 
 .box {
     width: 33.3%;
     height: 100%;
-    border : black 1px solid;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
 }
 
-div > i {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 0;
+.box i {
+    margin-top: 10px; 
+}
+
+.box img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
 }
