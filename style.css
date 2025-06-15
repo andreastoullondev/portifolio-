@@ -5,8 +5,8 @@
 }
 
 .container {
-    width: 1320px;
-    height: 500px;
+    width: 1680px;
+    height: 525px;
     display: flex;
 }
 
@@ -34,8 +34,3 @@ div > button{
     width: 100%;
 }
 
-@media (min-width: 1100px) {
-    .box{
-        width: 100;
-    }
-}
