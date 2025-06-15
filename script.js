@@ -1,6 +1,5 @@
 //conexão dos elemento HTML ao JAVASCRIPT 
-const turnOn = document.getElementById ('turnOn');
-const turnOff = document.getElementById ('turnOff');
+const turnOnOff = document.getElementById ('turnOnOff');
 const lamp = document.getElementById ('lamp');
 
 //funçoes 
@@ -27,9 +26,10 @@ function lampBroken(){
     lamp.src = './img/quebrada.jpg'
 }
 
+function lampOnOff
+
 //elementos 
-turnOn.addEventListener ('click', lampOn)
-turnOff.addEventListener('click', lampOff)
+turnOnOff.addEventListener ('click', lampOnOff );
 lamp.addEventListener('mouseover', lampOn);
 lamp.addEventListener('mouseleave',lampOff);
 lamp.addEventListener('dblclick', lampBroken );
