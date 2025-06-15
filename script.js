@@ -26,7 +26,15 @@ function lampBroken(){
     lamp.src = './img/quebrada.jpg'
 }
 
-function lampOnOff
+function lampOnOff(){
+    if( turnOnOff.textContent == 'Ligar'){
+        lampOn();
+        turnOnOff.textContent = 'Desligar'
+    }else{
+        lampOff();
+        turnOnOff.textContent = 'Ligar'
+    }
+}
 
 //elementos 
 turnOnOff.addEventListener ('click', lampOnOff );
