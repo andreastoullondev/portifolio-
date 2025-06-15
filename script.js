@@ -8,5 +8,10 @@ function lampOn(){
     lamp.src = './img/ligada.jpg'
 }
 
+function lampOff(){
+    lamp.src = './img/desligada.jpg'
+}
+
 
 turnOn.addEventListener ('click', lampOn)
+turnOff.addEventListener('click', lampOff)
