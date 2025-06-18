@@ -36,8 +36,13 @@ function lampOnOff(){
     }
 }
 
-//elementos 
+// eventos que eu quero 
 turnOnOff.addEventListener ('click', lampOnOff );
 lamp.addEventListener('mouseover', lampOn);
 lamp.addEventListener('mouseleave',lampOff);
 lamp.addEventListener('dblclick', lampBroken );
+
+// <------------------------------LAMPADA --------------------------------------->
+
+
+
