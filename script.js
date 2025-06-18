@@ -54,4 +54,13 @@ document.addEventListener("DOMContentLoaded", function(){
     const botaoSoma = document.getElementById('botao-que-soma')
     const botaoSub = document.getElementById('botao-que-subtrai')
 
+
+    function atualizaNumeroNoHTML(){
+        numeroNoHTML.textContent = numeroAtual
+    }
+
+    botaoSoma.addEventListener('click', ()=>{
+        numeroAtual++
+    })
+
 } )
