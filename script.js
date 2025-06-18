@@ -46,3 +46,12 @@ lamp.addEventListener('dblclick', lampBroken );
 
 
 
+document.addEventListener("DOMContentLoaded", function(){
+
+    let numeroAtual = 0 
+
+    const numeroNoHTML = document.getElementById('numero-atual')
+    const botaoSoma = document.getElementById('botao-que-soma')
+    const botaoSub = document.getElementById('botao-que-subtrai')
+
+} )
