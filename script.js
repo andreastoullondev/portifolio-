@@ -61,6 +61,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
     botaoSoma.addEventListener('click', ()=>{
         numeroAtual++
+        atualizaNumeroNoHTML()
     })
+
+    botaoSub.addEventListener('click', ()=>{
+        numeroAtual -= 1
+        atualizaNumeroNoHTML()
+    })
+
+    atualizaNumeroNoHTML()
 
 } )
