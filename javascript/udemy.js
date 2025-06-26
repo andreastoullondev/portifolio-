@@ -1,5 +1,7 @@
-let = 'andreas'
+function pessoas(humanos){
+    console.log('os guri')
+}
 
-for(let andreas = 0;andreas <= 12; andreas++){
-    andreas();
+for(let dinos = 0; dinos<= 12; dinos++){
+    pessoas(dinos);
 }
