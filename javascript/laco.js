@@ -18,4 +18,9 @@ for(let contador = 0;contador <= ciclosDesejados; contador++){
 
 console.log(proporcao)
 
+let contador = 0
 
+while(contador <= ciclosDesejados){
+
+    contador++
+}
