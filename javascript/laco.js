@@ -22,7 +22,7 @@ let contador = 0
 
 while(contador <= ciclosDesejados){
 
-     let proximo = penultimo + ultimo
+    let proximo = penultimo + ultimo
     penultimo = ultimo
     ultimo = proximo
 
