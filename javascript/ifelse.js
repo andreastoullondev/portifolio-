@@ -1,4 +1,8 @@
-const temperatura = -10
+const pais = "Brasil"
+
+let temperatura = pais === "Brasil" ? 25 : 10
+
+
 
 if( temperatura >= 30){
     console.log("Esta calor");
