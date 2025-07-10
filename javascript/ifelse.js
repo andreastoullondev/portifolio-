@@ -1,6 +1,12 @@
-const pais = "Brasil"
+const mundo = () => {
+    return{
+        pais: "Brasil",
+        pais: "Holanda",
+        pais: "Canada",
+    }
+};
 
-var mundo = 10 
+
 
 let temperatura = pais === "Brasil" ? 45 : 10
 
