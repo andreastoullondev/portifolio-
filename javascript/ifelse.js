@@ -1,21 +1,13 @@
-const mundo = () => {
-    return{
-        pais: "Brasil",
-        pais: "Holanda",
-        pais: "Canada",
-    }
-};
+
+let pais = "Brasil";
 
 
-
-let temperatura = pais === "Brasil" ? 45 : 10
+let temperatura = pais === "Brasil" ? 32 : 10
 
 
 
 if( temperatura >= 30){
-    for(let contador = 0;contador <=  mundo; contador++ ){
-        console.log(mundo)
-    }
+  console.log("calor")
 }else if(temperatura >= 20){
     console.log("Temperatura, Perfeita");
 }else{
