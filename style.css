@@ -42,3 +42,23 @@ div > button{
     width: 50%;
 
 }
+
+.align{
+    display: flex;
+}
+
+.player-options, .enemy-options{
+    width: 200px;
+}
+ .box .player-options img,
+ .enemy-options img{
+    max-width: 50px;
+    opacity: 0.3;
+    cursor: pointer;
+    
+}
+
+
+
+
+
