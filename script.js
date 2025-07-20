@@ -81,6 +81,33 @@ document.addEventListener("DOMContentLoaded", function(){
 //Seleção dos elementos
 var elementos = document.querySelectorAll('.player-options div > img');
 var playerOpt = "";
+var inimigoOpt = "";
+
+function resetInimigo(){
+    const enemyOptions = document.querySelectorAll('.enemy-options div');
+    for(var i = 0;i < enemyOptions.length; i++){
+       enemyOptions[i].childNodes[0].style.opacity = 0;
+    }
+}
+
+// math.floor funcionando como uma "IA"
+function inimigoJogar(){
+    let rand = Math.floor(Math.random()*3.3);
+
+    const enemyOptions = document.querySelectorAll('.enemy-options div');
+
+    resetInimigo();
+    for(var i = 0;i < enemyOptions.length; i++){
+        
+        if(i == rand){
+            enemyOptions[i].childNodes[0].style.opacity = 1;
+            inimigoOpt = enemyOptions[i].childNodes[0].getAttribute('opt');
+        }
+    }
+
+    //alert(playerOpt);
+    //alert(inimigoOpt);
+}
 
 //apos selecionar opção some as outras 
 function resetOpacityPlayer(){
@@ -96,7 +123,9 @@ for(var i = 0;i < elementos.length; i++){
         t.target.style.opacity = 1;
        playerOpt = t.target.getAttribute('opt');
 
-       alert(playerOpt)
+
+       inimigoJogar();
+       //alert(playerOpt) teste
     });
     
 }
