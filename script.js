@@ -78,15 +78,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
+//Seleção dos elementos
 var elementos = document.querySelectorAll('.player-options div > img');
 var playerOpt = "";
+
+//apos selecionar opção some as outras 
 function resetOpacityPlayer(){
    for(var i = 0;i < elementos.length; i++){
         elementos[i].style.opacity = 0;
    }
 }
 
+//Call back 
 for(var i = 0;i < elementos.length; i++){
     elementos[i].addEventListener('click',function(t){
         resetOpacityPlayer();
