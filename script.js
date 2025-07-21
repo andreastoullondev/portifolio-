@@ -83,6 +83,46 @@ var elementos = document.querySelectorAll('.player-options div > img');
 var playerOpt = "";
 var inimigoOpt = "";
 
+function validarVitoria(){
+
+    let vencedor = document.querySelector('.vencedor');
+
+    if(playerOpt == "papper"){
+        if(inimigoOpt == "papper"){
+            vencedor.innerHTML = "Empate"
+        }else if(inimigoOpt == "scisor"){
+            vencedor.innerHTML = "IA Venceu"
+        }else if(inimigoOpt == "rock"){
+            vencedor.innerHTML = "Player Venceu"
+        }
+    }
+
+     if(playerOpt == "rock"){
+        if(inimigoOpt == "rock"){
+            vencedor.innerHTML = "Empate"
+        }else if(inimigoOpt == "scisor"){
+            vencedor.innerHTML = "Player Venceu"
+        }else if(inimigoOpt == "papper"){
+            vencedor.innerHTML = "IA Venceu"
+        }
+    }
+
+     if(playerOpt == "scisor"){
+        if(inimigoOpt == "scisor"){
+            vencedor.innerHTML = "Empate"
+        }else if(inimigoOpt == "papper"){
+            vencedor.innerHTML = " Player Venceu"
+        }else if(inimigoOpt == "rock"){
+            vencedor.innerHTML = "IA Venceu"
+        }
+    }
+
+
+     //alert(playerOpt); papper / scisor / rock
+    //alert(inimigoOpt);
+}
+
+
 function resetInimigo(){
     const enemyOptions = document.querySelectorAll('.enemy-options div');
     for(var i = 0;i < enemyOptions.length; i++){
@@ -105,8 +145,8 @@ function inimigoJogar(){
         }
     }
 
-    //alert(playerOpt);
-    //alert(inimigoOpt);
+    validarVitoria();
+   
 }
 
 //apos selecionar opção some as outras 
