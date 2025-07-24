@@ -2,6 +2,8 @@
 const turnOnOff = document.getElementById ('turnOnOff');
 const lamp = document.getElementById ('lamp');
 
+let ligadaPeloBotao = "";
+
 //funçoes 
 
 function isLampBroken(){
@@ -29,7 +31,7 @@ function lampBroken(){
 function lampOnOff(){
     if( turnOnOff.textContent == 'Ligar'){
         lampOn();
-        turnOnOff.textContent = 'Desligar'
+        turnOnOff.textContent = 'Desligar';
     }else{
         lampOff();
         turnOnOff.textContent = 'Ligar'
@@ -39,7 +41,9 @@ function lampOnOff(){
 // eventos que eu quero 
 turnOnOff.addEventListener ('click', lampOnOff );
 lamp.addEventListener('mouseover', lampOn);
-lamp.addEventListener('mouseleave',lampOff);
+lamp.addEventListener('mouseleave', function(){
+    lampOff();
+} );
 lamp.addEventListener('dblclick', lampBroken );
 
 // <------------------------------LAMPADA --------------------------------------->
