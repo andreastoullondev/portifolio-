@@ -2,7 +2,7 @@
 const turnOnOff = document.getElementById ('turnOnOff');
 const lamp = document.getElementById ('lamp');
 
-let ligadaPeloBotao = "";
+let ligadaPeloBotao = false;
 
 //funçoes 
 
@@ -32,17 +32,26 @@ function lampOnOff(){
     if( turnOnOff.textContent == 'Ligar'){
         lampOn();
         turnOnOff.textContent = 'Desligar';
+        ligadaPeloBotao = true;
     }else{
         lampOff();
         turnOnOff.textContent = 'Ligar'
+        ligadaPeloBotao = false;
     }
 }
 
 // eventos que eu quero 
 turnOnOff.addEventListener ('click', lampOnOff );
-lamp.addEventListener('mouseover', lampOn);
+lamp.addEventListener('mouseover', function(){
+    if(!ligadaPeloBotao){
+        lampOn();
+    }
+});
 lamp.addEventListener('mouseleave', function(){
-    lampOff();
+    if(!ligadaPeloBotao){
+        lampOff();
+    }
+    
 } );
 lamp.addEventListener('dblclick', lampBroken );
 
