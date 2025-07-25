@@ -74,6 +74,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     botaoSoma.addEventListener('click', ()=>{
         numeroAtual++
+        if(numeroAtual > 3){
+            alert("qual proximo passo?")
+        }
         atualizaNumeroNoHTML()
     })
 
