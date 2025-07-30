@@ -68,10 +68,14 @@ div > button{
     
 }
 
+.ctn{
+    background-color: aqua;
+}
 
 
 
-@media screen and (max-width: 900px){
+
+@media screen and (max-width: 1200px){
     .box{
         width: 100%;
     }
