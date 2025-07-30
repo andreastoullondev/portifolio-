@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+.header{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 .container {
-    width: 1680px;
+    width: 100%;
+    max-width: 1680px;
     height: 525px;
     display: flex;
 }
@@ -20,9 +31,7 @@
     position: relative; 
 }
 
-.box i {
-    margin-top: 10px; 
-}
+
 
 .box img {
     max-width: 90%;
@@ -61,4 +70,8 @@ div > button{
 
 
 
-
+@media screen and (max-width: 900px){
+    .box{
+        width: 100%;
+    }
+}
