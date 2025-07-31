@@ -12,8 +12,6 @@
 }
 
 
-
-
 .container {
     width: 100%;
     max-width: 1680px;
@@ -32,6 +30,56 @@
     position: relative; 
 }
 
+.ctn{
+    display: inline-block;
+    justify-content: center;
+}
+
+.contador{
+   position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: auto; 
+    margin: 0; 
+    
+}
+
+.contador button{
+    width: 100px;
+    height: 50px;
+}
+
+
+.lampada{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: auto; 
+    margin: 0; 
+}
+
+.ppt{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: auto; 
+    margin: 0; 
+}
 
 
 .box img {
@@ -68,9 +116,6 @@ div > button{
     
 }
 
-.ctn{
-    background-color: aqua;
-}
 
 
 
