@@ -87,8 +87,17 @@ document.addEventListener("DOMContentLoaded", function(){
     })
     atualizaNumeroNoHTML();
 
-    
+    function jogandoPpt(){
 
+
+        if(atualizaNumeroNoHTML === 1){
+            alert("Ta dando certo");
+        }
+        
+        atualizaNumeroNoHTML();
+    }
+
+    jogandoPpt();
 } )
 
 
@@ -97,9 +106,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 //Seleção dos elementos
-var elementos = document.querySelectorAll('.player-options div > img');
-var playerOpt = "";
-var inimigoOpt = "";
+let elementos = document.querySelectorAll('.player-options div > img');
+let playerOpt = "";
+let inimigoOpt = "";
 
 function validarVitoria(){
 
