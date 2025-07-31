@@ -7,21 +7,19 @@ let ligadaPeloBotao = false;
 //funçoes 
 
 function isLampBroken(){
-    
     return lamp.src.indexOf ('quebrada') > -1 
-    
 }
 
 function lampOn(){
     if ( !isLampBroken ()) {
-    lamp.src = './img/ligada.jpg'
-     }
+        lamp.src = './img/ligada.jpg'
+    }
 }
 
 function lampOff(){
-      if ( !isLampBroken ()) {
-    lamp.src = './img/desligada.jpg'
-      }
+    if ( !isLampBroken ()) {
+        lamp.src = './img/desligada.jpg'
+    }
 }
 
 function lampBroken(){
@@ -31,12 +29,12 @@ function lampBroken(){
 function lampOnOff(){
     if( turnOnOff.textContent == 'Ligar'){
         lampOn();
-        turnOnOff.textContent = 'Desligar';
-        ligadaPeloBotao = true;
+            turnOnOff.textContent = 'Desligar';
+            ligadaPeloBotao = true;
     }else{
         lampOff();
-        turnOnOff.textContent = 'Ligar'
-        ligadaPeloBotao = false;
+            turnOnOff.textContent = 'Ligar'
+            ligadaPeloBotao = false;
     }
 }
 
@@ -179,11 +177,11 @@ function resetOpacityPlayer(){
 for(let i = 0;i < elementos.length; i++){
     elementos[i].addEventListener('click',function(t){
         resetOpacityPlayer();
-        t.target.style.opacity = 1;
-       playerOpt = t.target.getAttribute('opt');
+            t.target.style.opacity = 1;
+            playerOpt = t.target.getAttribute('opt');
 
 
-       inimigoJogar();
+        inimigoJogar();
        //alert(playerOpt) teste
     });
     
