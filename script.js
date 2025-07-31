@@ -60,7 +60,7 @@ lamp.addEventListener('dblclick', lampBroken );
 document.addEventListener("DOMContentLoaded", function(){
 
     let numeroAtual = 0 
-
+    
     const numeroNoHTML = document.getElementById('numero-atual')
     const botaoSoma = document.getElementById('botao-que-soma')
     const botaoSub = document.getElementById('botao-que-subtrai')
@@ -68,8 +68,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function atualizaNumeroNoHTML(){
         numeroNoHTML.textContent = numeroAtual
+        clicandoPpt();//  chamando a função toda vez que o numero atualiza 
     }
 
+    function clicandoPpt(){
+        if(numeroAtual === 1){
+            alert("tamo no caminho certo")
+        }else if(numeroAtual === 2){
+            alert("vamo pra cima dog")
+        }else if(numeroAtual === 3){
+            alert("bora dog")
+        }
+    }
     botaoSoma.addEventListener('click', ()=>{
         numeroAtual++
         if(numeroAtual > 3){
@@ -84,20 +94,11 @@ document.addEventListener("DOMContentLoaded", function(){
             numeroAtual = -3
         }
         atualizaNumeroNoHTML()
-    })
-    atualizaNumeroNoHTML();
 
-    function jogandoPpt(){
-
-
-        if(atualizaNumeroNoHTML === 1){
-            alert("Ta dando certo");
-        }
         
-        atualizaNumeroNoHTML();
-    }
+    })
+    
 
-    jogandoPpt();
 } )
 
 
