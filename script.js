@@ -85,8 +85,9 @@ document.addEventListener("DOMContentLoaded", function(){
         }
         atualizaNumeroNoHTML()
     })
+    atualizaNumeroNoHTML();
 
-    atualizaNumeroNoHTML()
+    
 
 } )
 
