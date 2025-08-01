@@ -73,12 +73,22 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function clicandoPpt(){
         if(numeroAtual === 1){
-            alert("tamo no caminho certo")
+            const playerRock = document.querySelector('.player-options [opt="rock"]');
+                if(playerRock){
+                    playerRock.click();
+                }
         }else if(numeroAtual === 2){
-            alert("vamo pra cima dog")
+            const playerpapper = document.querySelector('.player-options [opt="papper"]');
+                if(playerpapper){
+                    playerpapper.click();
+                }
         }else if(numeroAtual === 3){
-            alert("bora dog")
+            const playerscisor = document.querySelector('.player-options [opt="scisor"]');
+            if(playerscisor){
+                playerscisor.click()
+            }
         }
+        
     }
     botaoSoma.addEventListener('click', ()=>{
         numeroAtual++
