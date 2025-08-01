@@ -123,13 +123,12 @@ let inimigoOpt = "";
 
 function validarVitoria(){
 
-    let vencedor = document.querySelector('.vencedor', () => {
-        if(vencedor == playeropt){
-            lampOn();
-        }else if(vencedor == inimigoOpt){
-            lampOff();
-        }
-    });
+    let vencedor = document.querySelector('.vencedor');
+
+  
+
+
+    
 
     if(playerOpt == "papper"){
         if(inimigoOpt == "papper"){
@@ -162,9 +161,10 @@ function validarVitoria(){
     }
 
 
+   
 
 
-    lampOnOff();
+    
      //alert(playerOpt); papper / scisor / rock
     //alert(inimigoOpt);
 }
