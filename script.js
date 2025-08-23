@@ -124,31 +124,14 @@ let inimigoOpt = "";
 function validarVitoria(){
 
     let vencedor = document.querySelector('.vencedor');
-
-  
-
-
     
+    vencedor.innerHTML = playerOpt == "papper" 
+    ? inimigoOpt == "papper" ? "Empate" 
+    : inimigoOpt == "scisor" ? "IA Venceu" 
+    : "Player Venceu" 
+    : "";
 
-    if(playerOpt == "papper"){
-        if(inimigoOpt == "papper"){
-            vencedor.innerHTML = "Empate"
-        }else if(inimigoOpt == "scisor"){
-            vencedor.innerHTML = "IA Venceu"
-        }else if(inimigoOpt == "rock"){
-            vencedor.innerHTML = "Player Venceu"
-        }
-    }
 
-     if(playerOpt == "rock"){
-        if(inimigoOpt == "rock"){
-            vencedor.innerHTML = "Empate"
-        }else if(inimigoOpt == "scisor"){
-            vencedor.innerHTML = "Player Venceu"
-        }else if(inimigoOpt == "papper"){
-            vencedor.innerHTML = "IA Venceu"
-        }
-    }
 
      if(playerOpt == "scisor"){
         if(inimigoOpt == "scisor"){
