@@ -126,22 +126,24 @@ function validarVitoria(){
     let vencedor = document.querySelector('.vencedor');
     
     vencedor.innerHTML = playerOpt == "papper" 
-    ? inimigoOpt == "papper" ? "Empate" 
-    : inimigoOpt == "scisor" ? "IA Venceu" 
-    : "Player Venceu" 
-    : "";
+        ? inimigoOpt == "papper" ? "Empate" 
+        : inimigoOpt == "scisor" ? "IA Venceu" 
+        : "Player Venceu" 
+        : playerOpt == "rock"
+        ? inimigoOpt == "rock" ? "Empate"
+        : inimigoOpt == "papper" ? "IA Venceu"
+        : "Player Venceu"
+        : playerOpt == "scisor"
+        ? inimigoOpt == "scisor" ? "Empate"
+        : inimigoOpt == "rock" ? "IA Venceu"
+        : "Player Venceu"
+        : "Opção invalida" ;
 
 
 
-     if(playerOpt == "scisor"){
-        if(inimigoOpt == "scisor"){
-            vencedor.innerHTML = "Empate"
-        }else if(inimigoOpt == "papper"){
-            vencedor.innerHTML = " Player Venceu"
-        }else if(inimigoOpt == "rock"){
-            vencedor.innerHTML = "IA Venceu"
-        }
-    }
+    
+
+ 
 
 
    
