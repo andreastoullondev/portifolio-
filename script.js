@@ -138,20 +138,8 @@ function validarVitoria(){
         : inimigoOpt == "rock" ? "IA Venceu"
         : "Player Venceu"
         : "Opção invalida" ;
-
-
-
-    
-
- 
-
-
-   
-
-
-    
-     //alert(playerOpt); papper / scisor / rock
-    //alert(inimigoOpt);
+        //alert(playerOpt); papper / scisor / rock
+        //alert(inimigoOpt);
 }
 
 
