@@ -13,8 +13,7 @@ let valorTotal = 0
     //for( let valortAtual of venda){
          //valorTotal += valortAtual}
     
-    venda.forEach(( valortAtual, index)=>{
-        valorTotal += valortAtual
-    })
+    //venda.forEach(( valortAtual, index)=>{
+        //valorTotal += valortAtual})
 
 console.log(valorTotal);
