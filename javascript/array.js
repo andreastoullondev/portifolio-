@@ -17,3 +17,12 @@ let valorTotal = 0
         //valorTotal += valortAtual})
 
 console.log(valorTotal);
+
+
+const numeros = [1,2,3,4,5,6,7,8,9]
+
+const arryaySecundario = numeros.map((valorAtual)=>{
+    return; 
+})
+
+console.log(arryaySecundario);
